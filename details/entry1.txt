@@ -1,0 +1,9 @@
+First name : Preet,
+    Last name : Mevawalla,
+    Email Id : 202003025@daiict.ac.in,
+    Address 1 : aasasasasasasas,
+    Address 2 : asasaasamicmsds,
+    Phone No : +91 9328042801,
+    state : Gujarat,
+    Zip Code : 396445,
+    Check box : Yes it is checked!

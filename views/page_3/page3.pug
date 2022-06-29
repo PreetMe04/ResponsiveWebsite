@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+html(lang="en")
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
+         <link rel="apple-touch-icon" sizes="180x180" href="../../static/favicon_io/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="../../static/favicon_io/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="../../static/favicon_io/favicon-16x16.png" />
+        <link rel="manifest" href="../../static/favicon_io/site.webmanifest" />
+        <title>Edu Learning</title>
+        style
+            include ../../static/styles/style3.css
+    </head>
+
+    body
+        header 
+            h1(class="heading") Edu Learning Notes
+        //- <!-- NAVIGATION BAR CODE STARTS------------------------------------------------------- -->
+        nav(class="navbar navbar-expand-lg navbar-dark bg-light" id="myTopnav")
+            a(class="navbar-brand active mypadding" style="margin-left: 3px; font-weight: bolder;" href="/edu_notes") Edu-Notes
+            button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+                span(class="navbar-toggler-icon")
+
+            div(class="collapse navbar-collapse" id="navbarSupportedContent")
+                ul(class="navbar-nav mr-auto")
+                    li(class="nav-item ")
+                        a(class="nav-link mymargin" href="/") Home 
+                        
+                    li(class="nav-item")
+                        a(class="nav-link mymargin" href="/edu_videos") Edu-Vidoes
+                
+                    li(class="nav-item")
+                        a(class="nav-link mymargin" href="/edu_form") Edu-forms
+        
+                    li(class="nav-item dropdown")
+                        a(class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false") Contact
+
+                        div(class="dropdown-menu" aria-labelledby="navbarDropdown" style="border-radius: 5px; border: 4px solid #222831;")
+                            a(class="dropdown-item" href="#") Instagram
+                                hr
+                            
+                            a(class="dropdown-item" href="#") Facebook
+                                hr(style="list-style: circle;")
+                
+                            a(class="dropdown-item" href="#") Linked In
+                                hr
+        
+        div(class="content")
+            h1(class="container-heading") 
+                span(id="DBMS") Database Management system 
+            div(class="container")
+                div(class="item")
+                    a(href="../../static/pdfs/cheatsheet-a5.pdf" target="_blank")
+                        img(src="../../static/page3/book.png" alt="Chapter-1 Books")
+                    h1 Book
+                
+                div(class="item")
+                    a(href="../../static/pdfs/FAQs.pdf" target="_blank")
+                        img(src="../../static/page3/lectures.png" alt="Chapter-1 Lectures") 
+                    h1 Lectures
+                
+
+                div(class="item")
+                    a(href="../../static/pdfs/cheatsheet-a5.pdf" target="_blank")
+                        img(src="../../static/page3/notes_.png" alt="Chapter-1 Notes")
+                    h1 Notes
+                
+
+                div(class="item")
+                    a(href="../../static/pdfs/FAQs.pdf" target="_blank")
+                        img(src="../../static/page3/assignment.png" alt="Chapter-1 Notes")
+                    h1 Assignment
+                
+
+                div(class="item")
+                    a(href="../../static/pdfs/cheatsheet-a5.pdf" target="_blank")
+                        img(src="../../static/page3/revision_notes.png" alt="Chapter-1 Notes")
+                    h1 Revison Notes
+                
+
+        script. 
+            window.onscroll = function () {
+            myFunction1();
+            };
+
+            var navbar = document.getElementById("myTopnav");
+            var sticky = navbar.offsetTop;
+
+            function myFunction1() {
+                if (window.pageYOffset >= sticky) {
+                    if (screen.width > 600) {
+                        navbar.classList.add("sticky");
+                    } else {
+                        navbar.classList.remove("sticky");
+                    }
+                } else {
+                    navbar.classList.remove("sticky");
+                }
+            }
+
+        
+        script(src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous")
+        script(src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous")
+        script(src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous")

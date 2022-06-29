@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style3.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png" />
+  <link rel="manifest" href="../favicon_io/site.webmanifest" />
+  <title>Edu Learning</title>
+</head>
+
+<body>
+  <header>
+    <h1 class="heading">Edu Learning Notes</h1>
+  </header>
+  <!-- NAVIGATION BAR CODE STARTS------------------------------------------------------- -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-light" id="myTopnav" style="
+        background-color: #222831 !important;
+        padding: 0;
+        padding-top: 5px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+      ">
+    <a class="navbar-brand active mypadding" style="margin-left: 3px; font-weight: bolder" href="#">Edu-Notes</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link mymargin" href="../page_1/page1_home.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link mymargin" href="../page_2/page2_home.html">Edu-Vidoes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link mymargin" href="../page_4/page4_home.html">Edu-form</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-expanded="false">
+            Contact
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown"
+            style="border-radius: 5px; border: 4px solid #222831">
+            <a class="dropdown-item" href="#">Instagram
+              <hr/>
+            </a>
+
+            <a class="dropdown-item" href="#">Facebook
+              <hr style="list-style: circle" />
+            </a>
+            <a class="dropdown-item" href="#">Linked In
+              <hr />
+            </a>
+          </div>
+        </li>
+    </div>
+  </nav>
+  <!-- Navigation bar code ends------------------------------ -->
+  <div class="content">
+    <h1 class="container-heading"><span id="DBMS"> Database Management system </span></h1>
+    <div class="container">
+      <div class="item">
+        <a href="../pdfs/cheatsheet-a5.pdf" target="_blank"><img src="tutorial.png" alt="Chapter-1 Notes" /></a>
+        <h1>Book</h1>
+      </div>
+
+      <div class="item">
+        <a href="../pdfs/cheatsheet-a5.pdf" target="_blank"><img src="video-tutorial.png" alt="Chapter-1 Notes" /></a>
+        <h1>Lectures</h1>
+      </div>
+
+      <div class="item">
+        <a href="../pdfs/cheatsheet-a5.pdf" target="_blank"><img src="notes__.png" alt="Chapter-1 Notes" /></a>
+        <h1>Notes</h1>
+      </div>
+
+      <div class="item">
+        <a href="../pdfs/cheatsheet-a5.pdf" target="_blank"><img src="excersice__.png" alt="Chapter-1 Notes" /></a>
+        <h1>Assignment</h1>
+      </div>
+
+      <div class="item">
+        <a href="../pdfs/cheatsheet-a5.pdf" target="_blank"><img src="revision.png" alt="Chapter-1 Notes" /></a>
+        <h1>Revison Notes</h1>
+      </div>
+
+    </div>
+  </div>
+</body>
+<script>
+  window.onscroll = function () {
+    myFunction1();
+  };
+
+  var navbar = document.getElementById("myTopnav");
+  var sticky = navbar.offsetTop;
+
+  function myFunction1() {
+    if (window.pageYOffset >= sticky) {
+      if (screen.width > 612) {
+        navbar.classList.add("sticky");
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+</script>
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+<!-- <script
+    src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+   <script
+     src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"
+  ></script> -->
+
+<!-- s Option 2: Separate Popper and Bootstrap JS  -->
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+  integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+  integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+
+</html>

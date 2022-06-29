@@ -1,0 +1,9 @@
+First name : Mark,
+    Last name : Otto,
+    Email Id : preet@gmail.com,
+    Address 1 : asadssdds,
+    Address 2 : sdsdsds,
+    Phone No : +91 9325522654,
+    state : Gujarat,
+    Zip Code : 396445,
+    Check box : Yes it is checked!

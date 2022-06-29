@@ -1,0 +1,142 @@
+extends ../base.pug
+
+block style 
+    style
+        include ../../static/styles/style1.css
+
+block header 
+    header
+        h1(class="heading") Edu Learning Home
+block content
+    //- <!-- NAVIGATION BAR CODE STARTS------------------------------------------------------- -->
+    nav(class="navbar navbar-expand-lg navbar-dark bg-light" id="myTopnav")
+        a(class="navbar-brand active mypadding" style="margin-left: 3px; font-weight: bolder;" href="/") Home
+        button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+            span(class="navbar-toggler-icon")
+
+        div(class="collapse navbar-collapse" id="navbarSupportedContent")
+            ul(class="navbar-nav mr-auto")
+                li(class="nav-item ")
+                    a(class="nav-link mymargin" href="/edu_videos") Edu-Vidoes 
+                       
+                li(class="nav-item")
+                    a(class="nav-link mymargin" href="/edu_notes") Edu-Notes
+              
+                li(class="nav-item")
+                    a(class="nav-link mymargin" href="/edu_form") Edu-forms
+    
+                li(class="nav-item dropdown")
+                    a(class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false") Contact
+
+                    div(class="dropdown-menu" aria-labelledby="navbarDropdown" style="border-radius: 5px; border: 4px solid #222831;")
+                        a(class="dropdown-item" href="#") Instagram
+                            hr
+                        
+                        a(class="dropdown-item" href="#") Facebook
+                            hr(style="list-style: circle;")
+            
+                        a(class="dropdown-item" href="#") Linked In
+                            hr
+                    
+    //- <!-- Navigation bar code ends------------------------------ -->
+
+    //- <!-- CONTENCT CODE STARTS---------------------------------- -->
+    div(class="content")
+        div(class="container")
+            div(class="item" id="item1_hover" onmouseover="resize_it('item1_hover')" onmouseout="size_it('item1_hover')")
+                h1 What is the use of this website?
+                p
+                | Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit,
+                | delectus ipsa voluptates ipsum sapiente laboriosam, eveniet numquam
+                | aspernatur laudantium tempora earum. Minima aut est quaerat debitis
+                | voluptatem magni facere possimus voluptate quo harum eaque omnis
+                | exercitationem aliquam perspiciatis, corporis recusandae laudantium
+                | veniam quos voluptatibus sint. In provident quis corrupti iste.
+
+            div(class="item" id="item2_hover" onmouseover="resize_it('item2_hover')"  onmouseout="size_it('item2_hover')")
+                h1 What is the use of this website?
+                p
+                |    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit,
+                |    delectus ipsa voluptates ipsum sapiente laboriosam, eveniet numquam
+                |    aspernatur laudantium tempora earum. Minima aut est quaerat debitis
+                |    voluptatem magni facere possimus voluptate quo harum eaque omnis
+                |    exercitationem aliquam perspiciatis, corporis recusandae laudantium
+                |    veniam quos voluptatibus sint. In provident quis corrupti iste.
+        div(class="container")
+            div(class="item" id="item3_hover" onmouseover="resize_it('item3_hover')" onmouseout="size_it('item3_hover')")
+                h1 What is the use of this website?
+                p
+                |    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit,
+                |    delectus ipsa voluptates ipsum sapiente laboriosam, eveniet numquam
+                |    aspernatur laudantium tempora earum. Minima aut est quaerat debitis
+                |    voluptatem magni facere possimus voluptate quo harum eaque omnis
+                |    exercitationem aliquam perspiciatis, corporis recusandae laudantium
+                |    veniam quos voluptatibus sint. In provident quis corrupti iste.
+            div(class="item" id="item4_hover" onmouseover="resize_it('item4_hover')" onmouseout="size_it('item4_hover')")
+                h1 What is the use of this website
+                p
+                |    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit,
+                |    delectus ipsa voluptates ipsum sapiente laboriosam, eveniet numquam
+                |    aspernatur laudantium tempora earum. Minima aut est quaerat debitis
+                |    voluptatem magni facere possimus voluptate quo harum eaque omnis
+                |    exercitationem aliquam perspiciatis, corporis recusandae laudantium
+                |    veniam quos voluptatibus sint. In provident quis corrupti iste.
+
+        div(class="container")
+            div(class="item" id="item5_hover" onmouseover="resize_it('item5_hover')" onmouseout="size_it('item5_hover')")
+                h1 What is the use of this website?
+                p
+                |    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit,
+                |    delectus ipsa voluptates ipsum sapiente laboriosam, eveniet numquam
+                |    aspernatur laudantium tempora earum. Minima aut est quaerat debitis
+                |    voluptatem magni facere possimus voluptate quo harum eaque omnis
+                |    exercitationem aliquam perspiciatis, corporis recusandae laudantium
+                |    veniam quos voluptatibus sint. In provident quis corrupti iste.
+            
+            div(class="item" id="item6_hover" onmouseover="resize_it('item6_hover')" onmouseout="size_it('item6_hover')")
+                h1 What is the use of this website?
+                p
+                |    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit,
+                |    delectus ipsa voluptates ipsum sapiente laboriosam, eveniet numquam
+                |    aspernatur laudantium tempora earum. Minima aut est quaerat debitis
+                |    voluptatem magni facere possimus voluptate quo harum eaque omnis
+                |    exercitationem aliquam perspiciatis, corporis recusandae laudantium
+                |    veniam quos voluptatibus sint. In provident quis corrupti iste.
+    script. 
+        window.onscroll = function () {
+            myFunction1();
+            };
+
+            var navbar = document.getElementById("myTopnav");
+            var sticky = navbar.offsetTop;
+
+            function myFunction1() {
+                if (window.pageYOffset >= sticky) {
+                    if (screen.width > 600) {
+                        navbar.classList.add("sticky");
+                    } else {
+                        navbar.classList.remove("sticky");
+                    }
+                } else {
+                    navbar.classList.remove("sticky");
+                }
+            }
+
+            function resize_it(id) {
+            let hover = document.getElementById(id);
+            hover.style.margin = "10px";
+            // hover.style.padding = '50px';
+            hover.style.transitionDuration = "1s";
+            }
+
+            function size_it(id) {
+            let hover = document.getElementById(id);
+            hover.style.margin = "25px";
+            // hover.style.padding = '25px'
+            hover.style.transitionDuration = "0s";
+            }     
+
+       
+
+    
+    

@@ -1,0 +1,19 @@
+{
+  "name": "71_mega_project_with_pug",
+  "version": "1.0.0",
+  "description": "hello my web with pug",
+  "main": "web.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "yoyo"
+  ],
+  "author": "Preet",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15",
+    "pug": "^3.0.2"
+  }
+}
